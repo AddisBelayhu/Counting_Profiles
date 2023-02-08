@@ -13,6 +13,8 @@ function incrementCounter(){
     counterEl.innerText = currentNum;
     if(currentNum < dataCeil){
         setTimeout(incrementCounter, 50);
+    }else{
+        counterEl.innerText = dataCeil;
     }
 }
 
