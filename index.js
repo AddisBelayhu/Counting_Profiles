@@ -11,6 +11,9 @@ function incrementCounter(){
     const increment = dataCeil / 15;
     currentNum = Math.ceil(currentNum + increment);
     counterEl.innerText = currentNum;
+    if(currentNum < dataCeil){
+        setTimeout(incrementCounter, 50);
+    }
 }
 
 });
