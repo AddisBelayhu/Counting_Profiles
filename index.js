@@ -6,7 +6,9 @@ countersEl.forEach((counterEl) =>{
 
     incrementCounter()
 function incrementCounter(){
-
+let currentNum = +counterEl.innerText;
+    const dataCeil = counterEl.getAttribute("data-ceil");
+    const increment = dataCeil / 15;
     
 }
 
